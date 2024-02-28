@@ -1,0 +1,24 @@
+{
+  "name": "pet-mis",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/pet-mis/src",
+  "projectType": "application",
+  "targets": {
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "pet-mis:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "pet-mis:build:development"
+        },
+        "production": {
+          "buildTarget": "pet-mis:build:production"
+        }
+      }
+    }
+  },
+  "tags": []
+}
