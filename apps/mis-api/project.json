@@ -1,21 +1,21 @@
 {
-  "name": "pet-mis",
+  "name": "mis-api",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/pet-mis/src",
+  "sourceRoot": "apps/mis-api/src",
   "projectType": "application",
   "targets": {
     "serve": {
       "executor": "@nx/js:node",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "pet-mis:build"
+        "buildTarget": "mis-api:build"
       },
       "configurations": {
         "development": {
-          "buildTarget": "pet-mis:build:development"
+          "buildTarget": "mis-api:build:development"
         },
         "production": {
-          "buildTarget": "pet-mis:build:production"
+          "buildTarget": "mis-api:build:production"
         }
       }
     }
