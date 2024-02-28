@@ -1,0 +1,24 @@
+{
+  "name": "mis-notification",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/mis-notification/src",
+  "projectType": "application",
+  "targets": {
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "mis-notification:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "mis-notification:build:development"
+        },
+        "production": {
+          "buildTarget": "mis-notification:build:production"
+        }
+      }
+    }
+  },
+  "tags": []
+}

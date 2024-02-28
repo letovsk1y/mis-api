@@ -3,7 +3,7 @@ const { join } = require('path');
 
 module.exports = {
   output: {
-    path: join(__dirname, '../../dist/apps/mis-api'),
+    path: join(__dirname, '../../dist/apps/mis-notification'),
   },
   plugins: [
     new NxWebpackPlugin({
@@ -13,7 +13,6 @@ module.exports = {
       tsConfig: './tsconfig.app.json',
       assets: ['./src/assets'],
       optimization: false,
-      outputFileName: "main.js",
       outputHashing: 'none',
     }),
   ],
